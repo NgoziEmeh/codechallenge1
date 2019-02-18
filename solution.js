@@ -49,3 +49,23 @@ if (johnAveScore > markAveScore){
 } else {
     console.log('Mark\'s team is the winner with the highest average point of ' + markAveScore);
 };
+
+
+//4. Mary
+
+var maryTeamGame1 = 97;
+var maryTeamGame2 = 134;
+var maryTeamGame3 = 105;
+
+var maryAveScore = (maryTeamGame1 + maryTeamGame2 + maryTeamGame3)/3;
+console.log(maryAveScore); //Average = 112
+
+if  (johnAveScore > markAveScore && johnAveScore > maryAveScore){
+    console.log('John\'s team is the winner with average point of ' + johnAveScore);
+} else if (markAveScore > johnAveScore && markAveScore > maryAveScore){
+    console.log('Mark\'s team is the winner with average point of ' + markAveScore);
+} else if (maryAveScore > johnAveScore && maryAveScore > markAveScore){
+    console.log('Mary\'s team is the winner with average point of ' + maryAveScore);
+} else if(johnAveScore === markAveScore === maryAveScore){
+    console.log('All the three teams came out draw');
+};
